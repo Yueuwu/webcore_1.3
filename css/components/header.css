@@ -1,0 +1,32 @@
+.header {
+    height: 88px;
+
+    padding: 16px;
+    margin-bottom: 24px;
+
+    background-color: #ffffff;
+    border-bottom: 1px solid #d9fff5;
+}
+
+.header__wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header__navbar {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.header__navbar_item {
+    background-color: inherit;
+}
+
+.header_divider {
+    align-self: center;
+    width: 2px;
+    height: 32px;
+    border-radius: 1px;
+    background: #eaeaea;
+}
