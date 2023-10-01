@@ -9,16 +9,27 @@
 	<body>
 		<header class="header">
 			<div class="header__wrapper">
-				<nav class="header__navbar">
+				<nav class="header__navbar header__navbar--left-side">
 					<button class="header__navbar_item">
 						<img src="./img/burger.svg" alt="drop-down menu" />
 					</button>
+					<div class="header_divider header_divider--hidden"></div>
 					<a href="#" class="header__navbar_item">
 						<img src="./img/logo.svg" alt="link to #" />
 					</a>
 				</nav>
-				<div class="header_divider"></div>
-				<nav class="header__navbar">
+				
+				<nav class="header__navbar header__navbar--right-side">
+					<button class="header__navbar_item header__navbar_item--hidden">
+						<img src="./img/call.svg" alt="repair" />
+					</button>
+					<button class="header__navbar_item header__navbar_item--hidden">
+						<img src="./img/chat.svg" alt="repair" />
+					</button>
+					<button class="header__navbar_item header__navbar_item--hidden">
+						<img src="./img/profile.svg" alt="repair" />
+					</button>
+					<div class="header_divider"></div>
 					<button class="header__navbar_item">
 						<img src="./img/repair.svg" alt="repair" />
 					</button>
@@ -30,9 +41,20 @@
 		</header>
 
 		<main class="main">
-			<section class="main__section">
+			<section class="main__section main__section--flex-top">
 				<div class="main__section_highlighter"></div>
 				<h1 class="main__section_title">Услуги и сервисы</h1>
+				<nav class="contacts contacts--hidden-1120-flex">
+					<button class="contacts__btn">
+						<span class="contacts__btn_text">Оставить заявку</span>
+						<img class="contacts__btn_img" src="./img/repair.svg" alt="Submit application">
+					</button>
+
+					<button class="contacts__btn">
+						<span class="contacts__btn_text">Статус ремонта</span>
+						<img class="contacts__btn_img" src="./img/checkstatus.svg" alt="Repair status">
+					</button>
+				</nav>
 			</section>
 
 			<section class="main__section">
@@ -68,30 +90,32 @@
 				</ul>
 			</section>
 
-			<section class="main__section">
+			<section class="main__section main__section--flex">
 				<article class="main_about">
 					<p class="main_about_paragraph">
 						Мы являемся авторизованным сервисным центром по ремонту
 						техники Dell. Только у нас вы можете отремонтировать
 						свой ноутбук Dell с официальной гарантией производителя.
 					</p>
-					<p class="main_about_paragraph main_about_paragraph--hidden">
+					<p class="main_about_paragraph main_about_paragraph--hidden-768">
 						Мы успешно работаем с 1992 года и заслужили репутацию
-						надежного партнера, что подтверждает большое количество
+						надежного партнера </p> <p class="main_about_paragraph main_about_paragraph--hidden-1120"> , что подтверждает большое количество
 						постоянных клиентов. Мы гордимся тем, что к нам
 						обращаются по рекомендациям и, в свою очередь, советуют
-						нас родным и близким.
-					</p>
+						нас родным и близким.</p>
+					
+				
+				<button class="main__section__btn">
+					<img src="./img/expand.svg" alt="read more" />
+					<span class="main__section__btn_text">Читать далее</span>
+				</button>
 				</article>
-        <button class="main__section__btn">
-          <img src="./img/expand.svg" alt="read more"/>
-          <span class="main__section__btn_text">Читать далее</span>
-        </button>
+				<img class="main__photo" src="./img/cps_photo.jpg" alt="photo of the cps" />
 			</section>
 
-			<section class="main__section">
-        <img class="main__photo" src="./img/cps_photo.jpg" alt="photo of the cps"/>
-      </section>
+			<!-- <section class="main__section">
+				
+			</section> -->
 		</main>
 	</body>
 </html>
